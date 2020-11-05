@@ -16,7 +16,8 @@ nav{
     height: 50px;
 }
 main{
-  height: calc( 70vh - 60px - 50px - 50px);
+
+  height: calc(70vh - 60px - 50px - 50px);
 overflow: auto;
 }
 footer{
