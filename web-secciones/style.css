@@ -1,21 +1,11 @@
 *{
     margin: 0;
-<<<<<<< HEAD
     box-sizing: content-box;
 }
-
-
-=======
-    box-sizing: border-box;
-}
->>>>>>> f1311b9223608db99cedd69c35e5c5d87664ad1a
 header, nav, main, footer{
     padding: 15px;
     border-style: solid;
     border-width: 1px;
-<<<<<<< HEAD
-    
-
 }
 header{
     height: 60vh;
@@ -36,8 +26,6 @@ overflow: auto;
 footer{
     height: 10vh;
 
-    
-=======
 }
 
 header{
@@ -54,5 +42,4 @@ overflow: auto;
 }
 footer{
     height: 50px;
->>>>>>> f1311b9223608db99cedd69c35e5c5d87664ad1a
 }
