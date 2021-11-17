@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilo general el display none. Para esconder el footer.  Es para versión móvil*/
+
+header,
+aside,
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+
+/*Hace que desaparezca el footer*/
+
+footer {
+    display: none;
+}
+
+
+/*Ponemos min- al meno es para que Nav se quede abajo ya que si 
+el Main no tiene contenido suficiente el Nav se moverá*/
+
+
+/*Con el paddin-bottom hacemos que se vea todo el contenido del 
+Main porque el Nav con el fixed siempre está ahí y así obligamos a 
+tener un espacio en blanco*/
+
+main {
+    min-height: calc(100vh - 150px);
+    padding-bottom: 50px;
+}
+
+
+/*Position fixed es para que se quede siempre ahi el Nav*/
+
+
+/*Solo para versión MOVIL*/
+
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+
+/* Versión TABLET min-width:400 --- 
+---le añadimos and max-width: 768 para convertirlo
+en escritorio*/
+
+@media ( min-width: 400px) and (max-width: 768px) {
+    header {
+        position: absolute;
+        width: 25%;
+        top: 0;
+        left: 0;
+    }
+    nav {
+        background-color: thistle;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+    }
+    aside {
+        position: fixed;
+        top: 50px;
+        width: 25%;
+        background-color: hotpink;
+        min-height: calc( 100vh - 50px);
+        overflow: auto;
+    }
+    main {
+        position: fixed;
+        width: 75%;
+        right: 0;
+        top: 50px;
+        padding-bottom: 0;
+        min-height: calc( 100vh - 50px);
+        background-color: lemonchiffon;
+    }
+}
+
+
+/*version escritorio*/
+
+@media (min-width: 769px) {
+    header {
+        position: absolute;
+        min-width: 75%;
+        width: calc(100vw - 200px);
+        right: 0;
+        top: 0;
+        height: 50px;
+        background-color: maroon;
+    }
+    main {
+        background-color: lawngreen;
+        min-width: 60%;
+        width: calc(100vw - 200px - 15%);
+        overflow: auto;
+        position: absolute;
+        right: 15%;
+        top: 50px;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow: auto;
+        width: 25%;
+        max-width: 200px;
+        background-color: pink;
+    }
+    nav {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 15%;
+        min-height: calc( 100vh - 100px);
+        background-color: lightyellow;
+    }
+    footer {
+        display: block;
+        position: absolute;
+        min-width: 75%;
+        width: calc(100vw - 200px);
+        bottom: 0;
+        right: 0;
+        background-color: lightgray;
+        height: 50px;
+    }
+}

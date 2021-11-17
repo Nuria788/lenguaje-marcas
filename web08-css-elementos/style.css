@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*transitio-duration es para que el 
+HOVER no sea tan brusco*/
+
+.tarjeta {
+    width: 48%;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    transition-duration: 200ms;
+}
+
+.tarjeta:hover {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: lightyellow;
+}
+
+.columna-derecha {
+    float: right;
+}
+
+.tarjeta-izda {
+    float: left;
+}
+
+#div1 {
+    background-color: lightgreen;
+}
+
+#p1 {
+    background-color: lightsteelblue;
+}
+
+.enlaceWeb {
+    display: line-block;
+    min-width: 100px;
+    padding: 5px;
+    background-color: lightpink;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}

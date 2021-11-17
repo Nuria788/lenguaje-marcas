@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+ul {
+    border-style: solid;
+    width: 50%;
+}
+
+ol {
+    border-style: dotted;
+    width: 50%;
+    list-style-type: upper-roman;
+}
+
+li {
+    width: 60%;
+}
+
+#CeldaD {
+    color: rgb(202, 181, 95);
+}
+
+#textoB {
+    color: red;
+}
+
+.listaromano {
+    list-style-type: upper-roman
+}
+
+.listaazul {
+    color: sienna;
+}

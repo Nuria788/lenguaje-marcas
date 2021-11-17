@@ -1,0 +1,50 @@
+#colorcon_id {
+    background-color: gray
+}
+
+.mascolorconclass {
+    background-color: aqua
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    width: 100%;
+}
+
+#seat600 {
+    background-color: greenyellow;
+}
+
+th {
+    background-color: grey
+}
+
+.celdasPotencia {
+    background-color: hotpink;
+}
+
+.celdasPrecio {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+tbody {
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+    text-align: right;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: solid;
+}

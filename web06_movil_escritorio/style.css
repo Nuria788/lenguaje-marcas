@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav,
+header,
+footer {
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+aside,
+main {
+    border-style: solid;
+    border-width: 1px;
+    /* Se pone display: inline-block;  para que 
+main y aside admitan tener alguno a su lado*/
+    display: inline-block;
+    /* Todo el alto de aside y main  un 100%  se lo restare al px
+    al resto */
+    height: calc( 100vh - 150px);
+    overflow: auto;
+}
+
+aside {
+    width: 95px;
+    float: left;
+}
+
+main {
+    width: calc( 100% - 105px);
+    float: right;
+    padding: 3px;
+}
+
+footer {
+    clear: both;
+}
+
+
+/* clear:both  Es que depeja los dos lados*/
+
+aside>a {
+    display: block;
+    background-color: aqua;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    /* padding: arriba (top), izd(left), abajo (bottom),
+    derech (right)*/
+    padding: 5px 3ps 5px 3px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: skyblue;
+}
+
+aside>a:hover {
+    border-color: black;
+}
+
+aside>a:active {
+    color: red;
+}
+
+article>video,
+article>iframe {
+    width: 90%;
+    margin: auto;
+}
+
+main>section {
+    margin-bottom: 50px;
+    border-bottom-style: solid;
+    /* Añadido para convertir el main en bloque*/
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+section>h1 {
+    text-align: center;
+    background-color: sandybrown;
+    padding-top: 5px;
+    padding: 5px;
+}
+
+
+/* Cada artículo tiene un h2 un elemento multimedia y 
+un párrafo de descripción*/
+
+article>p {
+    text-align: end;
+    width: 90%;
+    margin: auto;
+}
+
+
+/*Título*/
+
+article>h2 {}
+
+
+/* videos  hijo de article, e 
+iframes hijo de article*/
+
+article>video,
+article>iframe {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+article>audio {
+    display: block;
+    margin-left: 5%;
+}
