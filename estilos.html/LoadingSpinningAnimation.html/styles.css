@@ -1,0 +1,62 @@
+/* General styles */
+body{
+    background-color: #151515;
+}
+/* General styles end */
+
+.spinner {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(
+        0deg, #ff00cc 0%,
+        #333399 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 85%;
+    height: 85%;
+    background-color: #151515;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+Explicación
+
+Paso 01, seleccione la rueda giratoria y aplique el ancho y la altura de su elección.
+Luego haga que la rueda giratoria sea redonda dándole un radio de borde del 50%.
+Dado que crearemos pseudoelementos con la posición absoluta, aplique una posición relativa a la rueda giratoria.
+
+Paso 02, seleccione la ruleta ::antes y ::después, ya que comparten esos estilos en común.
+Queremos la misma redondez, por lo que heredamos el radio del borde del 50% del padre.
+
+Paso 03, seleccione los pseudo elementos individualmente, comenzando con ::before.
+Ahora, aplique un ancho y alto del 100%. A continuación, establezca un color de fondo de su elección.
+
+Paso 04, seleccione el pseudo elemento ::after y aplique un ancho y una altura ligeramente más pequeños.
+Esto determinará el grosor del anillo.
+Asegúrese de que el color de fondo de este elemento coincida con el color de fondo general del lugar donde coloca la rueda giratoria.
+De esta manera, la rueda giratoria se mezcla excepto por el anillo exterior.
+Lo que hace ahora es colocar este elemento en el medio tanto vertical como horizontalmente, por lo tanto, los valores superior, izquierdo y de traducción.
+
+Paso 05, cree una animación de fotograma clave con una sola parada establecida en 'a'.
+'To' es una forma más corta de decir '100%' (el estado final); agregue una rotación de 360 ​​grados.
+Por último, aplica la animación al pseudo elemento ::before y asegúrate de que sea lineal e infinito.*/
