@@ -1,0 +1,27 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* General styles */
+body{
+    background-color: #2b3153;
+}
+/* General styles end */
+.blob{
+   animation: rotate-hue 2s alternate infinite;
+}
+
+@keyframes rotate-hue {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+/*
+Primero, seleccione el elemento que desea animar.
+En esta situación, una imagen colorida (esto también funcionará en texto).
+Ahora creará una animación de fotogramas clave que tiene una parada al 100 %.
+Dentro de esta parada, agregue la propiedad de filtro, esto le permitirá agregar efectos gráficos a un elemento.
+Luego, use la función de rotación de tono para aplicar un efecto de rotación de tono en la imagen.
+Esta función usa ángulos, así que especifica un número en grados. Finalmente, agregue la animación a su elemento.
+
+Notas finales: Si desea obtener resultados diferentes,
+juegue con los valores, como agregar más paradas o rotar el tono con valores positivos y negativos.
+*/
